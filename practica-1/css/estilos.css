@@ -1,0 +1,299 @@
+/* VARIABLES */
+
+:root {
+	--color-texto: rgb(0, 0, 25);
+	--color-texto-claro: rgba(0, 0, 25, 0.5);
+	--color-acento: rgb(240, 93, 80);
+	--color-acento-claro: rgba(240, 93, 80, 0.5);
+	--color-blanco: rgb(255, 255, 255);
+	--fuente-sans: Helvetica, Arial, sans-serif;
+	--fuente-serif: Georgia, "Times New Roman", Times, serif;
+}
+
+/* BASE */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--fuente-sans);
+	color: var(--color-texto);
+}
+
+.container {
+	width: 95%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.enlace {
+	color: var(--color-acento);
+	text-decoration: none;
+}
+
+.enlace:hover {
+	color: var(--color-acento-claro);
+}
+
+.titulo-obra {
+	font-family: var(--fuente-serif);
+	font-style: italic;
+}
+
+/* CABECERA DEL SITIO */
+
+.cabecera {
+	text-align: center;
+	margin: 20px 0 30px;
+}
+
+.cabecera__titulo {
+	font-family: var(--fuente-serif);
+	font-size: 3.5rem;
+}
+
+.cabecera__enlace {
+	color: var(--color-acento);
+	text-decoration: none;
+}
+
+.cabecera__enlace:hover {
+	color: var(--color-acento-claro);
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+.menu__lista {
+	list-style: none;
+	text-align: center;
+}
+
+.menu__item {
+	margin: 4px 0;
+}
+
+.menu__enlace {
+	color: var(--color-texto);
+	text-decoration: none;
+}
+
+.menu__enlace:hover {
+	color: var(--color-texto-claro);
+}
+
+.menu__enlace--activo {
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* CABECERA DEL ARTÍCULO (común a las tres páginas) */
+
+.cabecera-articulo {
+	text-align: center;
+	margin: 70px 0 40px;
+}
+
+.cabecera-articulo__titulo {
+	font-size: 2.35em;
+	margin-bottom: 20px;
+}
+
+.cabecera-articulo__intro {
+	max-width: 700px;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+.cabecera-articulo__autor {
+	font-style: normal;
+	font-size: 1.5em;
+	margin: 25px 0 15px;
+}
+
+.cabecera-articulo__fecha {
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+
+.cabecera-articulo__fechas {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.cabecera-articulo__subtitulo {
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+/* PÁGINA INDEX */
+
+.imagen {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.imagen__foto {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.imagen__pie {
+	font-size: 0.7em;
+	margin: 20px 0 40px;
+}
+
+.articulo__destacado {
+	max-width: 675px;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.articulo__titulo {
+	margin-top: 30px;
+}
+
+.articulo__parrafo {
+	margin-top: 30px;
+	line-height: 1.5;
+}
+
+.articulo__creditos {
+	font-family: var(--fuente-serif);
+	font-style: italic;
+	margin: 50px 0 100px;
+}
+
+.video {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.video__marco {
+	border: none;
+	max-width: 100%;
+}
+
+.video__pie {
+	margin-top: 20px;
+	font-size: 0.7em;
+}
+
+.cita-destacada {
+	margin: 20px 110px 0 50px;
+}
+
+.cita-destacada__texto {
+	font-family: var(--fuente-serif);
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+.cita-destacada__homero {
+	font-style: italic;
+	quotes: "«" "»";
+}
+
+.cita-destacada__autor {
+	font-family: var(--fuente-serif);
+	font-style: italic;
+	font-size: 0.95em;
+	margin-top: 10px;
+}
+
+/* PÁGINA LISTADO */
+
+.idiomas {
+	max-width: 620px;
+	margin: 0 auto;
+	padding-left: 40px;
+	color: var(--color-texto-claro);
+}
+
+.idiomas__item {
+	list-style-image: url(../img/idioma.png);
+}
+
+.idiomas__nombre {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.premiados {
+	list-style: square;
+	padding-left: 40px;
+}
+
+.premiados__item {
+	margin: 20px 0;
+}
+
+.premiados__anyo {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.premiados__autor {
+	font-size: 1.2em;
+}
+
+/* PÁGINA MOTIVACIÓN */
+
+.premios__autor {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.premios__motivacion {
+	padding-left: 30px;
+	margin-bottom: 30px;
+	line-height: 1.7;
+}
+
+.premios__anyo {
+	color: var(--color-texto-claro);
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.premios__cita {
+	font-family: var(--fuente-serif);
+	font-style: italic;
+	quotes: "«" "»";
+}
+
+/* FUENTE CONSULTADA (listado y motivación) */
+
+.fuente {
+	text-align: center;
+	margin: 40px 0 100px;
+}
+
+/* PIE DE PÁGINA */
+
+.pie {
+	background-color: var(--color-texto);
+	color: var(--color-blanco);
+	text-align: center;
+	padding: 80px 0;
+}
+
+.pie__texto--credito {
+	margin-top: 15px;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+.pie__enlace {
+	color: var(--color-blanco);
+	text-decoration: none;
+}
+
+.pie__enlace:hover {
+	color: var(--color-acento);
+}
