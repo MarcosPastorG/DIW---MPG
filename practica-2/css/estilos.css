@@ -1,0 +1,512 @@
+/*
+---------------------------------
+GENERAL
+---------------------------------
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--negro: #000000;
+	--turquesa: #6bdec8;
+	--rojo: #942c0b;
+	--blanco: #ffffff;
+}
+
+/* CONTENEDOR DE TODAS LAS PÁGINAS */
+.pagina {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: "Work Sans", sans-serif;
+	color: var(--negro);
+}
+
+.pagina--inicio {
+	background-image: url(../img/home-hero.jpg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/* TEXTO */
+.parrafo {
+	line-height: 1.5;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.titulo-seccion {
+	border-bottom: 1px solid grey;
+	margin-top: 30px;
+	padding-bottom: 5px;
+}
+
+.enlace-texto {
+	color: var(--rojo);
+	border-bottom: 1px dotted var(--rojo);
+	text-decoration: none;
+}
+
+.enlace-texto:hover {
+	border-bottom: 1px solid var(--rojo);
+}
+
+/*
+---------------------------------
+INDEX.HTML
+---------------------------------
+*/
+
+/* MENÚ */
+.menu-inicio__lista {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+	font-size: 1.2rem;
+	padding-top: 50px;
+	justify-content: center;
+}
+
+.menu-inicio__enlace {
+	color: var(--blanco);
+	text-decoration: none;
+}
+
+.menu-inicio__enlace:hover {
+	color: var(--turquesa);
+}
+
+/* PARTE CENTRAL */
+.inicio {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+}
+
+.inicio__titulo,
+.inicio__lema {
+	color: var(--blanco);
+}
+
+.inicio__titulo {
+	font-size: 6.5rem;
+	letter-spacing: -7px;
+}
+
+.inicio__lema {
+	font-size: 2rem;
+	letter-spacing: 6px;
+}
+
+/* FOOTER */
+.pie-inicio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--blanco);
+}
+
+.pie-inicio__lista {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+}
+
+.pie-inicio__texto {
+	margin-bottom: 10px;
+}
+
+.pie-inicio__texto:last-of-type {
+	padding-bottom: 20px;
+}
+
+/*
+---------------------------------
+CABECERA Y PIE DE LAS PÁGINAS INTERIORES
+---------------------------------
+*/
+
+/* CABECERA */
+.cabecera {
+	background-color: var(--negro);
+	padding-bottom: 60px;
+}
+
+.cabecera__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	color: var(--blanco);
+	text-decoration: none;
+	font-size: 2.3rem;
+	font-weight: bold;
+}
+
+.cabecera__isologo {
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+/* MENÚ */
+.menu__lista {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 30px;
+	margin-top: 10px;
+}
+
+.menu__enlace {
+	color: var(--blanco);
+	text-decoration: none;
+}
+
+.menu__enlace:hover {
+	color: var(--turquesa);
+}
+
+.menu__activo {
+	color: var(--blanco);
+	font-weight: normal;
+	border-bottom: 2px solid var(--blanco);
+	padding-bottom: 10px;
+}
+
+/* FOOTER */
+.pie {
+	background-color: var(--negro);
+	color: var(--blanco);
+	margin-top: 50px;
+	padding: 20px 30px 30px;
+}
+
+.pie__navegacion,
+.pie__texto {
+	width: 100%;
+	max-width: 1046px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pie__lista {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+
+.pie__texto {
+	line-height: 1.5;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* enlaces del pie (index y páginas interiores) */
+.pie__enlace,
+.pie-inicio__enlace {
+	color: var(--blanco);
+	text-decoration: none;
+}
+
+.pie__enlace:hover,
+.pie-inicio__enlace:hover {
+	color: var(--turquesa);
+}
+
+/*
+---------------------------------
+QUE-ES-LA-CERAMICA.HTML
+---------------------------------
+*/
+
+/* EXPLICACIÓN */
+.ceramica {
+	width: 100%;
+	max-width: 1046px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.ceramica__titulo {
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 30px;
+}
+
+/* VÍDEO */
+.video {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.video__reproductor {
+	width: 100%;
+	aspect-ratio: 600 / 350;
+	border: 0;
+}
+
+.video__pie {
+	font-size: 0.7rem;
+}
+
+/* UTENSILIOS */
+.utensilios__lista {
+	padding-left: 50px;
+}
+
+.utensilios__elemento {
+	margin-bottom: 15px;
+}
+
+/* TÉCNICAS Y MATERIALES */
+.tecnicas__lista {
+	padding-left: 50px;
+}
+
+.tecnicas__termino {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.tecnicas__definicion {
+	padding-left: 40px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+
+.tecnicas__nota {
+	font-size: 0.8rem;
+}
+
+/*
+---------------------------------
+CURSOS.HTML
+---------------------------------
+*/
+
+/* CONTENIDO */
+.cursos {
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+}
+
+/* TÍTULO, FOTO Y TEXTO */
+.presentacion {
+	width: 100%;
+	max-width: 820px;
+	margin: 0 auto 40px;
+	text-align: center;
+}
+
+.presentacion__titulo {
+	margin-top: 40px;
+}
+
+.presentacion__anio {
+	display: block;
+	font-size: 3.5rem;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 50px;
+}
+
+.presentacion__texto {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 50px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+/* FOTO */
+.foto__imagen {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.foto__pie {
+	font-size: 0.7rem;
+	line-height: 1.5;
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* TABLA */
+.tabla {
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.tabla__titulo {
+	border-top: 1px solid var(--negro);
+	border-bottom: 1px solid var(--negro);
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+.tabla__encabezado {
+	border-bottom: 1px solid var(--negro);
+}
+
+.tabla__columna,
+.tabla__curso,
+.tabla__dato,
+.tabla__nota {
+	padding: 15px 10px;
+	text-align: left;
+}
+
+.tabla__columna {
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+.tabla__columna:nth-child(1) {
+	width: 32%;
+}
+
+.tabla__columna:nth-child(2) {
+	width: 10%;
+}
+
+.tabla__columna:nth-child(3) {
+	width: 13%;
+}
+
+.tabla__curso {
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+
+/* filas de color: Torno, Modelado y Joyería */
+.tabla__fila:nth-child(odd) {
+	background-color: var(--turquesa);
+}
+
+.tabla__pie {
+	border-bottom: 1px solid var(--negro);
+}
+
+.tabla__nota {
+	font-size: 0.8rem;
+}
+
+/*
+---------------------------------
+INSCRIPCION-CURSOS.HTML
+---------------------------------
+*/
+
+/* CONTENIDO */
+.inscripcion {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.inscripcion__titulo {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.inscripcion__aviso {
+	font-size: 0.8rem;
+	margin-bottom: 25px;
+}
+
+/* GRUPOS DE CAMPOS */
+.formulario__grupo {
+	border: 1px solid var(--negro);
+	padding: 20px 30px;
+	margin-bottom: 30px;
+}
+
+.formulario__grupo--interior {
+	padding: 10px 15px;
+	margin-bottom: 25px;
+}
+
+.formulario__leyenda {
+	font-weight: bold;
+	font-size: 1.3rem;
+	padding: 0 5px;
+}
+
+/* CAMPOS */
+.formulario__campos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	padding-bottom: 20px;
+}
+
+.formulario__campo {
+	flex: 1 1 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	font-size: 0.9rem;
+}
+
+.formulario__entrada {
+	height: 50px;
+	padding: 0 10px;
+	border: 1px solid var(--negro);
+}
+
+.formulario__texto {
+	padding: 10px;
+	border: 1px solid var(--negro);
+	margin-bottom: 20px;
+}
+
+.formulario__opcion {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	margin: 12px 0;
+	font-size: 0.9rem;
+}
+
+/* PROTECCIÓN DE DATOS Y ENVÍO */
+.proteccion-datos {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.aceptar-politica {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	margin-bottom: 15px;
+	font-size: 0.9rem;
+}
+
+.boton {
+	background-color: var(--rojo);
+	color: var(--blanco);
+	border: 0;
+	padding: 15px 22px;
+	font-size: 1rem;
+}

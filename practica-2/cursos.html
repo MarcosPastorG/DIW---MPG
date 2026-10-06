@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cursos de cerámica · El taller</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="img/favicon-32x32.png" />
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+
+	<body>
+		<div class="pagina">
+			<!-- CABECERA -->
+			<header class="cabecera">
+				<a href="index.html" class="cabecera__logo">
+					<img
+						src="img/isologo-taller.png"
+						alt=""
+						class="cabecera__isologo"
+					/>el taller
+				</a>
+
+				<nav class="menu">
+					<ul class="menu__lista">
+						<li>
+							<a href="que-es-la-ceramica.html" class="menu__enlace"
+								>CERÁMICA</a
+							>
+						</li>
+						<li>
+							<strong class="menu__activo">CURSOS</strong>
+						</li>
+						<li>
+							<a href="inscripcion-cursos.html" class="menu__enlace"
+								>INSCRIPCIÓN</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- CONTENIDO PRINCIPAL -->
+			<main class="cursos">
+				<!-- TÍTULO, FOTO Y TEXTO -->
+				<section class="presentacion">
+					<h1 class="presentacion__titulo">Cursos de cerámica</h1>
+					<time datetime="2023" class="presentacion__anio">2023</time>
+
+					<figure class="foto">
+						<img
+							src="img/cursos-ceramica.jpg"
+							alt="Cursos cerámica"
+							class="foto__imagen"
+						/>
+						<figcaption class="foto__pie">
+							&copy; Foto de
+							<a
+								href="https://unsplash.com/es/@courtneymcook"
+								class="enlace-texto"
+								>Courtney Cook</a
+							>
+							en
+							<a
+								href="https://unsplash.com/es/fotos/jZLozXwxgbo"
+								class="enlace-texto"
+								>Unsplash</a
+							>
+						</figcaption>
+					</figure>
+
+					<p class="presentacion__texto">
+						Cursos de cerámica para todos los niveles. Artesanos
+						expertos te guiarán para que aprendas el oficio y des
+						rienda suelta a tu creatividad.
+					</p>
+				</section>
+
+				<!-- TABLA DE CURSOS -->
+				<table class="tabla">
+					<caption class="tabla__titulo">
+						Programación de cursos
+					</caption>
+
+					<thead>
+						<tr class="tabla__encabezado">
+							<th scope="col" class="tabla__columna">Cursos</th>
+							<th scope="col" class="tabla__columna">Precio</th>
+							<th scope="col" class="tabla__columna">Duración</th>
+							<th scope="col" class="tabla__columna">Horario</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr class="tabla__fila">
+							<th scope="row" class="tabla__curso">
+								<strong>Torno</strong>
+							</th>
+							<td class="tabla__dato">150 €</td>
+							<td class="tabla__dato">4 horas</td>
+							<td class="tabla__dato">
+								Un sábado al mes de 10 a 14 h
+							</td>
+						</tr>
+
+						<tr class="tabla__fila">
+							<th scope="row" class="tabla__curso">
+								<strong>Cerámica</strong>
+							</th>
+							<td class="tabla__dato">100 €</td>
+							<td class="tabla__dato">4 horas</td>
+							<td class="tabla__dato">
+								Jueves alternos de 19 a 21 h
+							</td>
+						</tr>
+
+						<tr class="tabla__fila">
+							<th scope="row" class="tabla__curso">
+								<strong>Modelado</strong>
+							</th>
+							<td class="tabla__dato">200 €</td>
+							<td class="tabla__dato">12 horas</td>
+							<td class="tabla__dato">
+								Un miércoles al mes de 18 a 21 h
+							</td>
+						</tr>
+
+						<tr class="tabla__fila">
+							<th scope="row" class="tabla__curso">
+								<strong>Esmaltes</strong>
+							</th>
+							<td class="tabla__dato">250 €</td>
+							<td class="tabla__dato">16 horas</td>
+							<td class="tabla__dato">
+								Martes y jueves de 19 a 21 h
+							</td>
+						</tr>
+
+						<tr class="tabla__fila">
+							<th scope="row" class="tabla__curso">
+								<strong>Joyería cerámica</strong>
+							</th>
+							<td class="tabla__dato">160 €</td>
+							<td class="tabla__dato">4 horas</td>
+							<td class="tabla__dato">
+								Un viernes al mes de 16 a 20 h
+							</td>
+						</tr>
+					</tbody>
+
+					<tfoot>
+						<tr class="tabla__pie">
+							<td colspan="4" class="tabla__nota">
+								Plazas limitadas a 15 alumnos por sesión
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</main>
+
+			<!-- FOOTER -->
+			<footer class="pie">
+				<nav class="pie__navegacion">
+					<ul class="pie__lista">
+						<li>
+							<a href="#" class="pie__enlace">Aviso legal</a>
+						</li>
+						<li>
+							<a href="#" class="pie__enlace"
+								>Política de privacidad</a
+							>
+						</li>
+						<li>
+							<a href="#" class="pie__enlace"
+								>Política de cookies</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<p class="pie__texto">
+					<small>2023 &copy; Marcos Pastor González</small>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
